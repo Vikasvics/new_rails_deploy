@@ -23,3 +23,14 @@ test:
 production:
   <<: *default
   database: db/production.sqlite3
+
+production:
+ adapter: postgresql
+ encoding: unicode
+ port: 5432
+ reconnect: false
+ username: deploy
+ password: password
+ database: timesheet_production
+ pool: 5
+ host: localhost
